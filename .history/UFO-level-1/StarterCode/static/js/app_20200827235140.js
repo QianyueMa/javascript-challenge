@@ -44,5 +44,4 @@ d3.selectAll("#filter-btn").on("click", function(event) {
     console.log(this);
     //console.log(d3.event.target);
     var inputValue = d3.select("#datetime").property("value");
-    var filteredData = tableData.filter(ufoSighting => ufoSighting.datetime === inputValue);
   });

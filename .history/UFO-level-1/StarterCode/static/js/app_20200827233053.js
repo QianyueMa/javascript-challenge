@@ -21,10 +21,10 @@ console.log(data);
 
 function dataDisplay(ufoSighting){ 
     tbody.text("");
-    ufoSighting.forEach(function(i){
+    ufoSighting.forEach(function(report){
         // append a table to the web page and adds new rows of data for each UFO sighting
         var row = tbody.append("tr");
-        Object.entries(i).forEach(function([key, value]){
+        Object.entries(report).forEach(function([key, value]){
             console.log(key, value);
             // Append a cell to the row for each value in the 'report' object
             var cell = row.append("td");
@@ -36,13 +36,5 @@ function dataDisplay(ufoSighting){
 // Call the function and display the data in the table
 dataDisplay(tableData);
 
-
-// Select all the buttons to work on them
-//var button = d3.selectAll("#filter-btn");
-d3.selectAll("#filter-btn").on("click", function(event) {
-    console.log("Hi, a button was clicked!");
-    console.log(this);
-    //console.log(d3.event.target);
-    var inputValue = d3.select("#datetime").property("value");
-    var filteredData = tableData.filter(ufoSighting => ufoSighting.datetime === inputValue);
-  });
+// Select the button
+var button = d3.select("#button");

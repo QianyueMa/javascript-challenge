@@ -21,12 +21,10 @@
         </div>
       </div>
     </nav>
-
     <div class="hero text-center">
       <h1>UFO Sightings</h1>
       <p>The Truth is Out There</p>
     </div>
-
     <div class="container">
       <div class="row margin-top-50">
         <div class="col-md-2">
@@ -64,22 +62,18 @@
                       </li>
 
                       <li class="filter list-group-item">
-                        <label for="durationMinutes">Enter the duration minutes</label>
-                        <input class="form-control" id="durationMinutes" type="text" placeholder="5 mins.">
+                        <label for="shape">Enter a shape</label>
+                        <input class="form-control" id="shape" type="text" placeholder="circle">
                       </li>
 
                     </ul>
                   </div>
-                  <button id="filter-btn" type="button" class="btn btn-default" style="background:skyblue">Filter Table</button>
-                  <button id="filter-btn" type="button" class="btn btn-default" style="background:green">Submit</button>
-                  <button id="filter-btn" type="button" class="btn btn-default" style="background:grey">Clear</button>
-
+                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
                 </form>
               </div>
             </div>
           </aside>
         </div>
-
         <div class="col-md-10">
           <div id="table-area" class="">
             <table id="ufo-table" class="table table-striped">
@@ -98,20 +92,15 @@
             </table>
           </div>
         </div>
-
       </div>
     </div>
-    
     <footer class="footer">
       <span class="bottom">UFO Sightings</span>
     </footer>
-
   </div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>
-
 </body>
 
 </html>
