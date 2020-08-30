@@ -79,6 +79,10 @@ date/time, city, state, country, shape
 //var button = d3.selectAll("#filter-btn");
 d3.selectAll("#filter-btn").on("click", function(event) {
 
+    console.log("Hi, a button was clicked!");
+    console.log(this);
+    //console.log(d3.event.target);
+
     // Prevent from refreshing the page
     d3.event.preventDefault();
 
@@ -95,8 +99,6 @@ d3.selectAll("#filter-btn").on("click", function(event) {
 
         };
 
-        console.log("Hi, a button was clicked!");
-        console.log(this);
         dataDisplay(filteredData);
 });
 

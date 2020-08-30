@@ -79,8 +79,9 @@ date/time, city, state, country, shape
 //var button = d3.selectAll("#filter-btn");
 d3.selectAll("#filter-btn").on("click", function(event) {
 
-    // Prevent from refreshing the page
-    d3.event.preventDefault();
+    console.log("Hi, a button was clicked!");
+    console.log(this);
+    //console.log(d3.event.target);
 
     // Count the number of 'classes' in html with document.getElementsByClassName().length
     var columns = document.getElementsByClassName('form-control');
@@ -89,14 +90,11 @@ d3.selectAll("#filter-btn").on("click", function(event) {
 
         // Grasp the id names which are the column names
         var columnName = columns[i].id;
-
-        // Filter the table
+        //var field = d3.select("#" + columnName).property("value");
         var filteredData = tableData.filter(ufoSighting => ufoSighting[columnName]);
-
+            //ufoSighting[columnName].toUpperCase().trim() === field.toUpperCase().trim());
         };
 
-        console.log("Hi, a button was clicked!");
-        console.log(this);
         dataDisplay(filteredData);
 });
 

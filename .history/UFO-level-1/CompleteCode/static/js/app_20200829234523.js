@@ -50,15 +50,15 @@ button.on("click", function(event) {
   
     // If the input field of 'date' is not entered with any character, display the whole table
     if (dateInput.trim() === "" ) {
-        var filteredDates = tableData;
+        var filteredDate = tableData;
     }
     // Otherwise, display the filtered dataset 
     else { 
-        var filteredDates = tableData.filter(ufoSighting => ufoSighting.datetime === dateInput);
+        var filteredDate = tableData.filter(ufoSighting => ufoSighting.datetime === dateInput);
     }
 
     //console.log(filteredData);
-    dataDisplay(filteredDates);
+    dataDisplay(filteredDate);
 
 });
 
@@ -79,8 +79,9 @@ date/time, city, state, country, shape
 //var button = d3.selectAll("#filter-btn");
 d3.selectAll("#filter-btn").on("click", function(event) {
 
-    // Prevent from refreshing the page
-    d3.event.preventDefault();
+    console.log("Hi, a button was clicked!");
+    console.log(this);
+    //console.log(d3.event.target);
 
     // Count the number of 'classes' in html with document.getElementsByClassName().length
     var columns = document.getElementsByClassName('form-control');
@@ -89,14 +90,8 @@ d3.selectAll("#filter-btn").on("click", function(event) {
 
         // Grasp the id names which are the column names
         var columnName = columns[i].id;
-
-        // Filter the table
-        var filteredData = tableData.filter(ufoSighting => ufoSighting[columnName]);
-
+        
         };
 
-        console.log("Hi, a button was clicked!");
-        console.log(this);
-        dataDisplay(filteredData);
-});
+  });
 

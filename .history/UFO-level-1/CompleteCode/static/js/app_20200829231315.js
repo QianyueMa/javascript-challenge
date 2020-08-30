@@ -36,36 +36,59 @@ function dataDisplay(ufoSighting){
 dataDisplay(tableData);
 
 
-// Listen for events and search through the 'date' column to find rows that match user input
-
 var button = d3.select("#filter-btn");
 
+// filter the database and display
 button.on("click", function(event) {
+  d3.event.preventDefault();
+  deleteTbody();
+  var dateInput = d3.select("#datetime").property("value");
+  
+  if (dateInput.trim() === "" ) {
+    // display the whole database if the date field has no date
+    var filteredData = tableData;
+  } else {
+    // otherwise, display the filtered dataset  
+    var filteredData = tableData.filter(ufoSighting => 
+      ufoSighting.datetime === dateInput.trim());
+  };
+
+  // display message if no records found
+  if (filteredData.length == 0) {
+    d3.select("tbody")
+      .append("tr")
+      .append("td")
+        .attr("colspan", 7)
+        .html("<h4>No Records Found</h4>");
+  };
+
+  console.log(filteredData);
+  dataDisplay(filteredData);
+
+/*
+// Listen for events and search through the 'date' column to find rows that match user input
+d3.select("#filter-btn").on("click", handleClick);
+
+function handleClick() {
 
     // Prevent from refreshing the page
     d3.event.preventDefault();
 
-    // Filter the database and display
-    var dateInput = d3.select("#datetime").property("value");
-  
-    // If the input field of 'date' is not entered with any character, display the whole table
-    if (dateInput.trim() === "" ) {
-        var filteredDates = tableData;
-    }
-    // Otherwise, display the filtered dataset 
-    else { 
-        var filteredDates = tableData.filter(ufoSighting => ufoSighting.datetime === dateInput);
-    }
+    var inputValue = d3.select("#datetime").property("value");
+    var filteredDate = tableData.filter(ufoSighting => ufoSighting.datetime === inputValue);
 
-    //console.log(filteredData);
-    dataDisplay(filteredDates);
+    //print the value that was input
+    console.log("Hi, a button was clicked!");
+    console.log(inputValue);
 
-});
+    //display the new table
+    dataDisplay(filteredDate);
+};
 
+dataDisplay(filteredDate);
+*/
 
-/* -------------------------------------- */
-
-/*
+/* 
 Level 2 Instructions: Multiple Search Categories (Optional)
 
 Complete all of Level 1 criteria.
@@ -74,29 +97,25 @@ multiple filters and search for UFO sightings using the following criteria based
 date/time, city, state, country, shape
 */
 
+/*
+// Listen for events and search through the 'date' column to find rows that match user input
+var inputValue = d3.select("#datetime").property("value");
+var filteredDate = tableData.filter(ufoSighting => ufoSighting.datetime === inputValue.trim());
 
+/*
 // Select all the buttons to work on them
 //var button = d3.selectAll("#filter-btn");
 d3.selectAll("#filter-btn").on("click", function(event) {
+    console.log("Hi, a button was clicked!");
+    console.log(this);
+    //console.log(d3.event.target);
 
-    // Prevent from refreshing the page
-    d3.event.preventDefault();
-
-    // Count the number of 'classes' in html with document.getElementsByClassName().length
+    // Count the number of classes with document.getElementsByClassName().length
     var columns = document.getElementsByClassName('form-control');
 
     for (var i = 0; i < columns.length; i++) {
-
-        // Grasp the id names which are the column names
         var columnName = columns[i].id;
-
-        // Filter the table
-        var filteredData = tableData.filter(ufoSighting => ufoSighting[columnName]);
-
         };
 
-        console.log("Hi, a button was clicked!");
-        console.log(this);
-        dataDisplay(filteredData);
-});
-
+  });
+*/
