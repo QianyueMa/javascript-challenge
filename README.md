@@ -1,6 +1,13 @@
 # javascript-challenge
 * use JavaScript, HTML, CSS, D3.js;
-* The completed files are in the CompleteCode directory: index.html, static/js/app.js
+
+### The completed files are in the CompleteCode directory: 
+* [index.html](UFO-level-1_and_2/CompleteCode/index.html)
+* [app.js](UFO-level-1_and_2/CompleteCode/static/js/app.js)
+#### Dataset
+* [UFO Sightings Data](UFO-level-1_and_2/CompleteCode/static/js/data.js)
+
+- - -
 
 ### Level 1: Automatic Table and Date Search
 * Create a basic HTML web page.
@@ -12,9 +19,3 @@
 ### Level 2: Multiple Search Categories
 * Complete all of Level 1 criteria.
 * Using multiple `input` tags and/or select dropdowns, write JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the same table columns.
-
-
-- - -
-
-### Dataset
-* [UFO Sightings Data](UFO-level-1_and_2/CompleteCode/static/js/data.js)
