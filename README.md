@@ -1,5 +1,6 @@
 # javascript-challenge
 uses JavaScript, HTML, CSS, D3.js
+[nasa.jpg](UFO-level-1_and_2/CompleteCode/static/images/nasa.jpg)
 
 ### The completed files are in the CompleteCode directory: 
 * [index.html](UFO-level-1_and_2/CompleteCode/index.html)
