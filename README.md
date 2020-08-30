@@ -1,6 +1,6 @@
 # javascript-challenge
 * use JavaScript, HTML, CSS, D3.js;
-* The completed files are in the CompleteCode directory: index.html, static/js/app.js
+** The completed files are in the CompleteCode directory: index.html, static/js/app.js
 
 ### Level 1: Automatic Table and Date Search
 * Create a basic HTML web page.
