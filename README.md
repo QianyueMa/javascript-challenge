@@ -9,7 +9,7 @@ uses JavaScript, HTML, CSS, D3.js
 
 - - -
 
-![nasa](UFO-level-1_and_2/CompleteCode/static/images/nasa.jpg)
+![preview](UFO-level-1_and_2/CompleteCode/static/images/preview.png)
 
 ### Level 1: Automatic Table and Date Search
 * Create a basic HTML web page.
