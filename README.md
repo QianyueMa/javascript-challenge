@@ -1,6 +1,5 @@
 # javascript-challenge
 uses JavaScript, HTML, CSS, D3.js
-![nasa](UFO-level-1_and_2/CompleteCode/static/images/nasa.jpg)
 
 ### The completed files are in the CompleteCode directory: 
 * [index.html](UFO-level-1_and_2/CompleteCode/index.html)
@@ -9,6 +8,8 @@ uses JavaScript, HTML, CSS, D3.js
 * [UFO Sightings Data](UFO-level-1_and_2/CompleteCode/static/js/data.js)
 
 - - -
+
+![nasa](UFO-level-1_and_2/CompleteCode/static/images/nasa.jpg)
 
 ### Level 1: Automatic Table and Date Search
 * Create a basic HTML web page.
