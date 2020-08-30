@@ -6,11 +6,10 @@ uses JavaScript, HTML, CSS, D3.js
 * [app.js](UFO-level-1_and_2/CompleteCode/static/js/app.js)
 #### Dataset
 * [UFO Sightings Data](UFO-level-1_and_2/CompleteCode/static/js/data.js)
-
-- - -
-
+#### Preview of the webpage
 ![preview](UFO-level-1_and_2/CompleteCode/static/images/preview.png)
 
+- - -
 ### Level 1: Automatic Table and Date Search
 * Create a basic HTML web page.
 * Using the UFO dataset provided in the form of an array of JavaScript objects, write code that appends a table to your web page and then adds new rows of data for each UFO sighting.
