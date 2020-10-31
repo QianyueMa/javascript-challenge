@@ -1,15 +1,15 @@
 # javascript-challenge - JavaScript and DOM Manipulation
 Use `JavaScript`,`HTML/CSS`, `D3.js` to manipulate and represent a dataset about the past UFO Sightings dynamically on the web pages
 
-![preview](UFO-level-1_and_2/CompleteCode/static/images/preview.png)
+![preview](UFO-level-1/static/images/preview.png)
 
 ## Navigation of the repo: Submission
-The completed files [index.html](UFO-level-1_and_2/CompleteCode/index.html) and [app.js](UFO-level-1_and_2/CompleteCode/static/js/app.js) are in the CompleteCode directory.
+The completed files [index.html](UFO-level-1/index.html) and [app.js](UFO-level-1/static/js/app.js) are in the CompleteCode directory.
 
 - - -
 
 ## Objectives
-* to create a user-friendly table dynamically based upon the [provided UFO Sightings dataset](UFO-level-1_and_2/CompleteCode/static/js/data.js); the potential users should be able to filter this table for the specific values of their interest
+* to create a user-friendly table dynamically based upon the [provided UFO Sightings dataset](UFO-level-1/static/js/data.js); the potential users should be able to filter this table for the specific values of their interest
 
 ## Tasks
 
