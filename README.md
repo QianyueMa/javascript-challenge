@@ -4,7 +4,7 @@ Use `JavaScript`,`HTML/CSS`, `D3.js` to manipulate and represent a dataset about
 ![preview](UFO-level-1/static/images/preview.png)
 
 ## Navigation of the repo: Submission
-The completed files [index.html](UFO-level-1/index.html) and [app.js](UFO-level-1/static/js/app.js) are in the CompleteCode directory.
+The completed files [index.html](UFO-level-1/index.html) and [app.js](UFO-level-1/static/js/app.js) are in the completed code directory.
 
 - - -
 
